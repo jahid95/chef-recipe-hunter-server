@@ -1,23 +1,29 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import companyLogo from '../../assets/images/logo.png';
+import profileLogo from '../../assets/images/user-profile.png';
 
 const Header = () => {
     return (
-        <Container className='d-flex justify-content-around bg-danger text-white py-2'>
-            <h4>TheAmericanChef</h4>
-            <div>
-                <Link className='px-3 py-2 text-decoration-none text-white'>Home</Link>
-                <Link className='px-3 text-decoration-none py-2 text-white'>Blogs</Link>
-            </div>
-            <div className='d-flex align-items-center justify-content-center'>
-                <p>User Profile</p>
-                <Button className='ms-2 bg-secondary'>Login</Button>
-            </div>
+       <Container>
+         <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="/">
+            <img src={companyLogo} alt="Company Logo" className="company-logo w-25" style={{ height: '50px', width: '50px' }} />
+            American Chef
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="m-auto">
+              <Nav.Link href="/" active>Home</Nav.Link>
+              <Nav.Link href="/menu" active>Menu</Nav.Link>
 
-        </Container>
-    );
+            </Nav>
+            <img src={profileLogo} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />
+            <button className="btn btn-primary login-logout-btn">Login</button>
+          </Navbar.Collapse>
+        </Navbar>
+       </Container>
+      );
 };
 
 export default Header;
