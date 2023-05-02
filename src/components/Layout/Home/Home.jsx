@@ -1,10 +1,13 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import RestaurantCarousel from './Carousel/RestaurantCarousel';
 
 const Home = () => {
     return (
-        <div>
-            <h2>This is Home</h2>
-        </div>
+        <Container>
+           
+            <RestaurantCarousel></RestaurantCarousel>
+        </Container>
     );
 };
 
