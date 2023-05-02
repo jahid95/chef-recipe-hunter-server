@@ -10,38 +10,38 @@ function FoodOffer() {
       <h4>Best Offer</h4>
       <Row>
         <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={foodImage1} />
+          <Card style={{height: '400px'}}>
+            <Card.Img variant="top" src={foodImage1} style={{height: '200px'}}/>
             <Card.Body>
               <Card.Title>Food Offer 1</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at mauris nisl.
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
               </Card.Text>
-              <Button variant="primary">Order Now</Button>
+              <Button className='mt-auto' variant="primary">Order Now</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={foodImage2} />
+          <Card style={{height: '400px'}}>
+            <Card.Img variant="top" src={foodImage2} style={{height: '200px'}} />
             <Card.Body>
               <Card.Title>Food Offer 2</Card.Title>
               <Card.Text>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
               </Card.Text>
-              <Button variant="primary">Order Now</Button>
+              <Button className='mt-auto' variant="primary">Order Now</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={foodImage3} />
+          <Card style={{height: '400px'}}>
+            <Card.Img variant="top" src={foodImage3} style={{height: '200px'}} />
             <Card.Body>
               <Card.Title>Food Offer 3</Card.Title>
               <Card.Text>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
               </Card.Text>
-              <Button variant="primary">Order Now</Button>
+              <Button className='mt-auto'  variant="primary">Order Now</Button>
             </Card.Body>
           </Card>
         </Col>
