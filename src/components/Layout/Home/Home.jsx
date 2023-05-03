@@ -4,13 +4,14 @@ import RestaurantCarousel from './Carousel/RestaurantCarousel';
 import ChefCard from '../Features/Chef/ChefCard';
 import Gallery from '../Gallery/Gallery';
 import FoodOffer from '../FoodOffer/FoodOffer';
+import Chef from '../Chef/Chef';
 
 const Home = () => {
     return (
         <Container>
            
             <RestaurantCarousel></RestaurantCarousel>
-            <ChefCard></ChefCard>
+            <Chef></Chef>
             <Gallery></Gallery>
             <FoodOffer></FoodOffer>
         </Container>
