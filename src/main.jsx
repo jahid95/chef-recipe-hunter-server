@@ -10,6 +10,8 @@ import Main from './components/Layout/Main/Main';
 import Home from './components/Layout/Home/Home';
 import ChefDetails from './components/Layout/ChefDetails/ChefDetails';
 import AuthProvider from './providers/AuthProvider/AuthProvider';
+import Login from './components/Login_Layout/Login/Login';
+import Register from './components/Login_Layout/Login/Register';
 
 
 const router = createBrowserRouter([
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
         element: <ChefDetails></ChefDetails>,
         loader: ({params}) => fetch(`http://localhost:3000/chef/${params.id}`)
 
+      },
+      {
+        path: "login",
+        element: <Login></Login>
+      },
+      {
+        path: "register",
+        element: <Register></Register>
       }
     ]
   },

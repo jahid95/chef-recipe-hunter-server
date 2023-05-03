@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import companyLogo from '../../assets/images/logo.png';
 import profileLogo from '../../assets/images/user-profile.png';
 import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const {user} = useContext(AuthContext)
@@ -25,7 +26,7 @@ const Header = () => {
             }
            {
             user?  <button className="btn btn-primary login-logout-btn">Logout</button>:
-            <button className="btn btn-primary login-logout-btn">Login</button>
+            <Link to='/login'><button className="btn btn-primary login-logout-btn">Login</button></Link>
            }
           </Navbar.Collapse>
         </Navbar>
