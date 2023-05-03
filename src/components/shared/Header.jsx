@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import companyLogo from '../../assets/images/logo.png';
 import profileLogo from '../../assets/images/user-profile.png';
+import { AuthContext } from '../../providers/AuthProvider/AuthProvider';
 
 const Header = () => {
+  const {user} = useContext(AuthContext)
     return (
        <Container>
          <Navbar bg="light" expand="lg">
@@ -18,8 +20,13 @@ const Header = () => {
               <Nav.Link href="/blogs" active>Blogs</Nav.Link>
 
             </Nav>
-            <img src={profileLogo} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />
+            {
+              user? <p>{user.displayName}</p> : <img src={profileLogo} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />
+            }
+           {
+            user?  <button className="btn btn-primary login-logout-btn">Logout</button>:
             <button className="btn btn-primary login-logout-btn">Login</button>
+           }
           </Navbar.Collapse>
         </Navbar>
        </Container>
