@@ -12,6 +12,7 @@ import ChefDetails from './components/Layout/ChefDetails/ChefDetails';
 import AuthProvider from './providers/AuthProvider/AuthProvider';
 import Login from './components/Login_Layout/Login/Login';
 import Register from './components/Login_Layout/Login/Register';
+import PrivateRoute from './components/Login_Layout/Login/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/:id",
-        element: <ChefDetails></ChefDetails>,
+        element: <PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
         loader: ({params}) => fetch(`http://localhost:3000/chef/${params.id}`)
 
       },
