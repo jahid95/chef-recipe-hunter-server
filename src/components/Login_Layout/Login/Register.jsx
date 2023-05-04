@@ -9,6 +9,8 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [accepted, setAccepted] = useState(false);
 
+
+
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
@@ -31,6 +33,8 @@ const Register = () => {
     const handleAccepted = event =>{
         setAccepted(event.target.checked)
     }
+
+
 
     return (
         <Container className='w-25 mx-auto'>
@@ -76,10 +80,7 @@ const Register = () => {
                 </Form.Text>
             </Form>
 
-            <div>
-                <p>SignWith <Button>Google</Button></p>
-                <p>SignWith <Button>Github</Button></p>
-            </div>
+           
         </Container>
     );
 };

@@ -9,7 +9,7 @@ const ChefCard = ({ch}) => {
 <div>
   
 <Card style={{ width: '18rem' }}>
-      <Card.Img style={{height: '150px'}} variant="top" src={chefPicture} />
+      <Card.Img loading='lazy' style={{height: '150px'}} variant="top" src={chefPicture} />
       <Card.Body>
         <Card.Title>{chefName}</Card.Title>
         <Card.Text>

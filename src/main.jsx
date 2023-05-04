@@ -14,12 +14,14 @@ import Login from './components/Login_Layout/Login/Login';
 import Register from './components/Login_Layout/Login/Register';
 import PrivateRoute from './components/Login_Layout/Login/PrivateRoute';
 import Blogs from './components/Layout/Blogs/Blogs';
+import ErrorPage from './components/shared/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main>Hello world!</Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: 'blogs',
         element: <Blogs></Blogs>
+      },
+      {
+        path:"*",
+        element: <ErrorPage></ErrorPage>
       }
     ]
   },
