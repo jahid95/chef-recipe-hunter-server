@@ -13,6 +13,7 @@ import AuthProvider from './providers/AuthProvider/AuthProvider';
 import Login from './components/Login_Layout/Login/Login';
 import Register from './components/Login_Layout/Login/Register';
 import PrivateRoute from './components/Login_Layout/Login/PrivateRoute';
+import Blogs from './components/Layout/Blogs/Blogs';
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>
+      },
+      {
+        path: 'blogs',
+        element: <Blogs></Blogs>
       }
     ]
   },

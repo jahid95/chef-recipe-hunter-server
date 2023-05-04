@@ -11,34 +11,34 @@ function Gallery() {
       <Row>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage1} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage1} />
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage2} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage2} />
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage3} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage3} />
           </Card>
         </Col>
       </Row>
       <Row>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage1} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage1} />
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage2} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage2} />
           </Card>
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={galleryImage3} />
+            <Card.Img style={{height: '500px'}}variant="top" src={galleryImage3} />
           </Card>
         </Col>
       </Row>

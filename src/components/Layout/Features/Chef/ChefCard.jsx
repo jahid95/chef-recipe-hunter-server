@@ -4,12 +4,12 @@ import chefImage from '../../../../assets/images/chef_carousel (2).jpg'
 import { Link } from 'react-router-dom';
 
 const ChefCard = ({ch}) => {
-  const {id,chefName} = ch;
+  const {id,chefName,chefPicture} = ch;
   return (
 <div>
-  <h4>Choose Your Favorite Chef</h4>
+  
 <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={chefImage} />
+      <Card.Img style={{height: '150px'}} variant="top" src={chefPicture} />
       <Card.Body>
         <Card.Title>{chefName}</Card.Title>
         <Card.Text>

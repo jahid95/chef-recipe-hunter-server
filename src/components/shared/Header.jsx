@@ -25,8 +25,7 @@ const Header = () => {
             <Nav className="m-auto">
               <Nav.Link href="/" active>Home</Nav.Link>
               <Nav.Link href="/blogs" active>Blogs</Nav.Link>
-              <Nav.Link href="/login" active>login</Nav.Link>
-
+              
             </Nav>
             {
               user && <img src={profileLogo} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />

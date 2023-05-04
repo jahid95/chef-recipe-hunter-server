@@ -6,7 +6,7 @@ import foodImage3 from '../../../assets/images/offer (3).jpg';
 
 function FoodOffer() {
   return (
-    <Container>
+    <Container className='my-5'>
       <h4>Best Offer</h4>
       <Row>
         <Col md={4}>
