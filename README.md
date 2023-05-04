@@ -4,26 +4,16 @@ AmericanChef is a website for food lover of top chef in usa.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager npm
 
-```bash
-pip install foobar
-```
+
 
 ## Usage
 
-```python
-import foobar
+# React
+# React Bootstrap
+# React Router DOM
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
 
 ## Contributing
 
@@ -34,4 +24,4 @@ Please make sure to update tests as appropriate.
 
 ## Live website link
 
-[MIT](https://choosealicense.com/licenses/mit/)
+# (https:https://the-american-chef.web.app/)
