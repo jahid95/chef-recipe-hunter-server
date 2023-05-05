@@ -5,8 +5,14 @@ import { AuthContext } from '../../../providers/AuthProvider/AuthProvider';
 
 
 
+import './Login.css'
+
+
+
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    
+
+    const { signIn, handleGithubLogin, handleGoogleLogin } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     console.log('login page location', location)
@@ -29,6 +35,12 @@ const Login = () => {
                 console.log(error);
             })
     }
+
+ 
+
+
+
+
 
     return (
         <Container className='w-25' style={{ marginBottom: '180px' }}>
@@ -58,6 +70,24 @@ const Login = () => {
 
                 </Form.Text>
             </Form>
+            <div className=" social-button-container w-50 mt-3">
+                <div className="">
+                    <img
+                        onClick={handleGoogleLogin}
+                        className=" social-button"
+                        src="https://i.ibb.co/gSTHXZJ/google-btn.png"
+                        alt=""
+                    />
+                </div>
+                <div className="">
+                    <img
+                        onClick={handleGithubLogin}
+                        className=" social-button"
+                        src="https://i.ibb.co/g9f4P0S/github-btn.png"
+                        alt=""
+                    />
+                </div>
+            </div>
         </Container>
     );
 };

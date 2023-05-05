@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 
 import { useState } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider/AuthProvider';
+import { getAuth, updateProfile } from "firebase/auth";
+import app from '../../../../firebase.config';
+const auth = getAuth(app);
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [accepted, setAccepted] = useState(false);
+    const [error, setError] = useState('')
 
 
 
@@ -20,6 +24,10 @@ const Register = () => {
         const password = form.password.value;
 
         console.log(name, photo, email, password)
+        if(password.length < 6){
+            setError('Password less than six character')
+            return;
+        }
         createUser(email, password)
             .then(result => {
                 const createdUser = result.user;
@@ -28,6 +36,16 @@ const Register = () => {
             .catch(error => {
                 console.log(error);
             })
+
+            updateProfile(auth.currentUser, {
+                displayName: {name}, photoURL: {photo}
+              }).then(() => {
+                // Profile updated!
+                // ...
+              }).catch((error) => {
+                // An error occurred
+                // ...
+              });
     }
 
     const handleAccepted = event =>{
@@ -76,6 +94,7 @@ const Register = () => {
 
                 </Form.Text>
                 <Form.Text className="text-danger">
+                    <p>{error}</p>
 
                 </Form.Text>
             </Form>

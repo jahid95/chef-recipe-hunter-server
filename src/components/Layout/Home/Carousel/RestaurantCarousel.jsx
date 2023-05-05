@@ -16,8 +16,8 @@ function RestaurantCarousel() {
         />
         <Carousel.Caption>
           <Container>
-            <h3>First slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Number One Cook</h3>
+            <p>Are You Hungry ? Order Us hurry up  </p>
           </Container>
         </Carousel.Caption>
       </Carousel.Item>
@@ -29,7 +29,7 @@ function RestaurantCarousel() {
         />
         <Carousel.Caption>
           <Container>
-            <h3>Second slide label</h3>
+            <h3>Tasty Food For You</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Container>
         </Carousel.Caption>
@@ -42,7 +42,7 @@ function RestaurantCarousel() {
         />
         <Carousel.Caption>
           <Container>
-            <h3>Third slide label</h3>
+            <h3>Original Taste , Pure Taste</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </Container>
         </Carousel.Caption>

@@ -28,7 +28,7 @@ const Header = () => {
               
             </Nav>
             {
-              user && <img src={profileLogo} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />
+              user && <img src={user.photoURL} alt="Profile Logo" className="profile-logo m-2" style={{height: '40px', width: '40px' }} />
             }
            {
             user?  <button onClick={handleLogOut} className="btn btn-primary login-logout-btn">Logout</button>:
